@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/custom.59417457.css">
+    <title>Hello, world!</title>
+  <script src="/custom.59417457.js"></script></head>
+  <body class="bg-light">
+    <div class="container my-5">
+      <div class="text-center mb-5">
+        <h2 class="text-center">Checkout form</h2>
+        <p>Please fill all the required delivery and payment information</p>
+      </div>
+
+      <nav class="nav nav-pills justify-content-center mb-4" id="checkout-tabs" role="tablist">
+        <a href="#billing-address" id="billing-address-tab" data-toggle="pill" role="tab" aria-controls="billing-address" aria-selected="true" class="nav-link active">Billing address</a>
+        <a href="#shipping-address" id="shipping-address-tab" data-toggle="pill" role="tab" aria-controls="shipping-address" aria-selected="false" class="nav-link">Shipping address</a>
+        <a href="#payment-method" id="payment-methods-tab" data-toggle="pill" role="tab" aria-controls="payment-method" aria-selected="false" class="nav-link">Payment information</a>
+      </nav>
+      <div class="row g-5">
+        <div class="col-md-8">
+          <form class="tab-content">
+            <!-- BILLING ADDRESS TAB PANE -->
+            <div class="tab-pane active" role="tabpanel" aria-labelledby="billing-address-tab" id="billing-address">
+              <h4 class="mb-4">Billing address</h4>
+              <div class="card">
+                <div class="card-body row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstname-billing" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstname-billing" placeholder="John" required="">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="lastname-billing" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastname-billing" placeholder="Smith" required="">
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="country-billing" class="form-label">Country</label>
+                    <select name="country" id="country-billing" class="form-select">
+                      <option value="">Select...</option>
+                      <option value="kz">Kazakhstan</option>
+                      <option value="cn">China</option>
+                      <option value="jp">Japan</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="city-billing" class="form-label">City</label>
+                    <input class="form-control" type="text" id="city-billing" required="">
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="zip-billing" class="form-label">Zip index</label>
+                    <input class="form-control" type="text" id="zip-billing" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="address1-billing" class="form-label">Address line 1</label>
+                    <input class="form-control" type="text" placeholder="Street name and number" id="address1-billing" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="address2-billing" class="form-label">Address line 2</label>
+                    <input class="form-control" type="text" placeholder="Apartment, suit, block, etc." id="address2-billing" required="">
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-shipping">
+                      <label class="form-check-label" for="same-shipping">My shipping address is the same as billing
+                        address</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SHIPPING ADDRESS TAB PANE-->
+            <div class="tab-pane" role="tabpanel" aria-labelledby="shipping-address-tab" id="shipping-address">
+              <h4 class="mb-4">Shipping address</h4>
+              <div class="card">
+                <div class="card-body row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="John" required="">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Smith" required="">
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="country" class="form-label">Country</label>
+                    <select name="country" id="country" class="form-select">
+                      <option value="">Select...</option>
+                      <option value="kz">Kazakhstan</option>
+                      <option value="cn">China</option>
+                      <option value="jp">Japan</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="city" class="form-label">City</label>
+                    <input class="form-control" type="text" id="city" required="">
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="zip" class="form-label">Zip index</label>
+                    <input class="form-control" type="text" id="zip" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="address1" class="form-label">Address line 1</label>
+                    <input class="form-control" type="text" placeholder="Street name and number" id="address1" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="address2" class="form-label">Address line 2</label>
+                    <input class="form-control" type="text" placeholder="Apartment, suit, block, etc." id="address2" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="weekdays-delivery">
+                      <label class="form-check-label" for="weekdays-delivery">Deliver on weekdays</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="comments" class="form-label">Any comments to order?</label>
+                    <textarea class="form-control" name="comments" id="comments" rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAYMENT METHOD PANE -->
+            <div id="payment-method" class="tab-pane" role="tabpanel" aria-labelledby="payment-methods-tab">
+              <h4 class="mb-4">Payment information</h4>
+              <div class="card">
+                <div class="card-body row g-3">
+                  <div class="col-sm-6 d-flex flex-column">
+                    <label for="card-onwers-name" class="form-label">Name on card</label>
+                    <input type="text" class="form-control" id="card-owners-name">
+                    <button class="btn btn-sm btn-secondary align-self-end mt-2" type="button">
+                      Copy from billing address
+                    </button>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="card-number" class="form-label">Card number</label>
+                    <input type="text" class="form-control" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="expiration-date" class="form-label">Expiration date</label>
+                    <div class="row g-3">
+                      <div class="col-6">
+                        <input type="number" class="form-control" placeholder="month">
+                      </div>
+                      <div class="col-6">
+                        <input type="number" class="form-control" placeholder="year">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="number" class="form-control" id="cvv" maxlength="3" minlength="3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="mb-4 d-flex justify-content-between align-items-center">
+            Your cart
+            <button class="btn btn-sm btn-outline-secondary">
+              edit
+            </button>
+          </h4>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>Amd Ryzen 5 3600 BOX</strong>
+                  <small class="d-block text-secondary mt-1">ASIN: B01F80FSKS</small>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="text-muted m-0">$175</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>Palit GTX 1660 Super OC</strong>
+                  <small class="d-block text-secondary mt-1">ASIN: A142338SKS</small>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="text-muted m-0">$200</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>G.Skill Ripjaws 2x8gb DDR4 3600Mhz</strong>
+                  <small class="d-block text-secondary mt-1">ASIN: B01F80FSKS</small>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="text-muted m-0">$65</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>MSI B450 Tomahawk Max</strong>
+                  <small class="d-block text-secondary mt-1">ASIN: B01F80FSKS</small>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="text-muted m-0">$105</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item bg-light text-success">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>Promocode</strong>
+                  <small class="d-block mt-1">EASYSHOP20</small>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="m-0">-$50</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col">
+                  <strong>Shipping</strong>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <p class="m-0">Free</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row p-1">
+                <div class="col"><strong>Total:</strong></div>
+                <div class="col-auto">$495</div>
+              </div>
+            </li>
+          </ul>
+          <form id="promocode-form" novalidate="">
+            <div class="input-group mt-4">
+              <input type="text" class="form-control" placeholder="Enter promocode">
+              <button class="btn btn-outline-success">Apply</button>
+            </div>
+          </form>
+          <button id="next-place-order-btn" class="btn btn-primary w-100 mt-4" data-tab-index="0">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/try-bootstrap5.e31bb0bc.js"></script>
+  </body>
+</html>
