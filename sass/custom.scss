@@ -1,10 +1,4 @@
 // custom styles
-$enable-shadows: true;
-$enable-gradients: true;
-$enable-reduced-motion: false;
-$spacer: 1.5rem;
-$border-color: #ff0000;
-$border-radius: 2rem;
-$card-border-color: #6c757d;
+
 // Include all of Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";

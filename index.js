@@ -1,5 +1,5 @@
-// import "./node_modules/bootstrap/dist/js/bootstrap.js";
-import "bootstrap";
+import bootstrap from "./node_modules/bootstrap/dist/js/bootstrap.js";
+// import bootstrap from "bootstrap";
 import "./sass/custom.scss"; // Import our scss file
 var nextPlaceOrderBtn = document.getElementById("next-place-order-btn");
 const promocodeForm = document.getElementById("promocode-form");
