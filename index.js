@@ -1,6 +1,8 @@
 import bootstrap from "./node_modules/bootstrap/dist/js/bootstrap.js";
 // import bootstrap from "bootstrap";
-import "./sass/custom.scss"; // Import our scss file
+import "./sass/main.scss"; // Import our scss file
+
+import "./kitchen";
 var nextPlaceOrderBtn = document.getElementById("next-place-order-btn");
 const promocodeForm = document.getElementById("promocode-form");
 

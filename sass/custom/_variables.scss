@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// custom styles
+
+$white: #fff;
+$gray-100: #f7f7fc;
+$gray-200: #f3f3f9;
+$gray-300: #e0e0f2;
+$gray-400: #dfdfeb;
+$gray-500: #9e9fb4;
+$gray-600: #737491;
+$gray-700: #5a5b75;
+$gray-800: #4a4b65;
+$gray-900: #37384e;
+$black: #000;
+
+$primary: #766df4;
+$secondary: $gray-100;
+$success: #16c995;
+$info: #6a9bf4;
+$warning: #ffb15c;
+$danger: #f74f78;
+$light: $white;
+$dark: $gray-900;
+
+$font-family-sans-serif: "Inter", sans-serif;
+
+$user-selection-color: rgba($primary, 0.22); // apply later
+
+/* LINKS */
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem; // 10px
+$spacers: (
+  // 0 px
+    0: 0,
+  // 0.25rem | 4px
+    1: $spacer / 4,
+  // 0.5rem | 8px
+    2: $spacer / 2,
+  // 1rem | 16px
+    3: $spacer,
+  // 1.5rem | 24px
+    4: $spacer * 1.5,
+  // 3rem || 48px
+    5: $spacer * 3
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $gray-100;
+$body-color: $black;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem;
+
+// Border radius
+// card use 1rem border raduis, but they do not use these variables
+// buttons, inputs use 0.75rem - they directly use
+
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1rem;
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
