@@ -22,8 +22,6 @@ $danger: #f74f78;
 $light: $white;
 $dark: $gray-900;
 
-$font-family-sans-serif: "Inter", sans-serif;
-
 $user-selection-color: rgba($primary, 0.22); // apply later
 
 /* LINKS */
@@ -57,7 +55,7 @@ $spacers: (
 // Settings for the `<body>` element.
 
 $body-bg: $gray-100;
-$body-color: $black;
+$body-color: $gray-900;
 
 // Paragraphs
 //
@@ -73,7 +71,29 @@ $border-radius: 0.75rem;
 $border-radius-sm: 0.5rem;
 $border-radius-lg: 1rem;
 
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+// $box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow: 0 0 0.625rem -0.1875rem rgba($black, 0.13);
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+
+.box-shadow-lg {
+  box-shadow: $box-shadow-lg;
+}
+
+// this hover is applicable only to cards?
+.outline-hover:hover {
+  border-color: rgba($primary, 0.35);
+  box-shadow: 0.1875rem 0.1875rem 0.625rem -0.125rem rgba(0, 0, 0, 0.09);
+}
+.outline-hover {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+// Fonts
+$font-family-sans-serif: "Inter", sans-serif;
+$font-size-root: null;
