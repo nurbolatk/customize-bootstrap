@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 // custom styles
 
 $white: #fff;
@@ -34,7 +34,7 @@ $link-hover-decoration: underline;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem; // 10px
+$spacer: 1rem;
 $spacers: (
   // 0 px
     0: 0,
@@ -46,7 +46,9 @@ $spacers: (
     3: $spacer,
   // 1.5rem | 24px
     4: $spacer * 1.5,
-  // 3rem || 48px
+  // // 1.5rem | 32px
+    //   5: $spacer * 2,
+    // 3rem || 48px
     5: $spacer * 3
 );
 
@@ -71,11 +73,13 @@ $border-radius: 0.75rem;
 $border-radius-sm: 0.5rem;
 $border-radius-lg: 1rem;
 
-// $box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+// Box shadows
+//
 $box-shadow: 0 0 0.625rem -0.1875rem rgba($black, 0.13);
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
-$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+$box-shadow-sm: 0 0 0.625rem -0.1875rem rgba($black, 0.13);
+$box-shadow-lg: -0.0625rem 0 0.625rem 0 rgba($black, 0.07),
+  0.3125rem 1.25rem 2.5rem 0 rgba($black, 0.04);
+$box-shadow-active: 0.1875rem 0.1875rem 0.625rem -0.125rem rgba($black, 0.09);
 
 .box-shadow {
   box-shadow: $box-shadow;
@@ -85,10 +89,14 @@ $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
   box-shadow: $box-shadow-lg;
 }
 
+.box-shadow-sm {
+  box-shadow: $box-shadow-sm;
+}
+
 // this hover is applicable only to cards?
 .outline-hover:hover {
   border-color: rgba($primary, 0.35);
-  box-shadow: 0.1875rem 0.1875rem 0.625rem -0.125rem rgba(0, 0, 0, 0.09);
+  box-shadow: $box-shadow-active;
 }
 .outline-hover {
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
