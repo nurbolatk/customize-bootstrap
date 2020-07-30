@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 // custom styles
 
+$enable-shadows:              true;
+
 $white: #fff;
 $gray-100: #f7f7fc;
 $gray-200: #f3f3f9;
@@ -82,6 +84,8 @@ $paragraph-margin-bottom: 1rem;
 // Border radius
 // card use 1rem border raduis, but they do not use these variables
 // buttons, inputs use 0.75rem - they directly use
+$border-width:     1px;
+$border-color:     $gray-300;
 
 $border-radius:    0.75rem;
 $border-radius-sm: 0.5rem;
@@ -190,9 +194,79 @@ $text-muted:                  $gray-500;
 $text-shadow:                 0 .0625rem rgba($black, .5);// around
 
 // TODO: Check, Assign these blockquote variables
-$blockquote-font-size:          $font-size-base !default;
-$blockquote-small-font-size:    $font-size-base !default;
-$blockquote-small-font-weight:  $font-weight-medium !default;
-$blockquote-small-color:        $headings-color !default;
-$blockquote-mark-color:         rgba($primary, .5) !default;
-$blockquote-mark-font-size:     4rem !default;
+$blockquote-font-size:          $font-size-base;
+$blockquote-small-font-size:    $font-size-base;
+$blockquote-small-font-weight:  $font-weight-medium;
+$blockquote-small-color:        $headings-color;
+$blockquote-mark-color:         rgba($primary, .5);
+$blockquote-mark-font-size:     4rem;
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+// $input-btn-padding-y:         .375rem; // 6px
+// $input-btn-padding-x:         .75rem; // 12px
+// $input-btn-padding-y:         .5rem; // 8px
+// $input-btn-padding-x:         1rem; // 16px
+$input-btn-padding-y:               .5625rem; // 9px // this is from around
+$input-btn-padding-x:               1.125rem; // 18px // this is from around
+
+$input-btn-focus-width:         .2rem;
+$input-btn-focus-color-opacity: .25;
+$input-btn-focus-color:         rgba($primary, $input-btn-focus-color-opacity);
+$input-btn-focus-box-shadow:    0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+// $input-btn-padding-y-sm:      .25rem;
+// $input-btn-padding-x-sm:      .6rem;
+$input-btn-padding-y-sm:            .425rem; // 6.8px
+$input-btn-padding-x-sm:            1rem; // 16px
+
+// $input-btn-padding-y-lg:      .5rem;
+// $input-btn-padding-x-lg:      1rem;
+$input-btn-padding-y-lg:            .75rem;
+$input-btn-padding-x-lg:            1.25rem;
+
+
+$input-btn-border-width:      $border-width;
+
+
+$input-btn-focus-width:             0;
+
+$input-group-icon-size:             $font-size-base; // used only by around?
+
+
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-disabled-opacity:        .65;
+$btn-block-spacing-y:         .5rem;
+
+// around
+$btn-padding-x:                     1.25rem; // 20px == $input-btn-padding-x-lg
+$btn-padding-x-sm:                  1rem; // 16px == $input-btn-padding-x-sm
+$btn-padding-x-lg:                  1.5rem; // 24px
+
+$btn-dark-color:                    $white; // only around
+$btn-light-color:                   $gray-700; // only around
+$btn-font-weight:                   $font-weight-medium;
+$btn-box-shadow:                    none;
+
+$btn-pill-border-radius:            ($font-size-base * $line-height-base + $input-btn-padding-y * 2 + .125); // only around
+$btn-pill-border-radius-sm:         ($font-size-sm * $line-height-sm + $input-btn-padding-y-sm * 2 + .125); // only around
+$btn-pill-border-radius-lg:         ($font-size-lg * $line-height-lg + $input-btn-padding-y-lg * 2 + .125); // only around
+
+$btn-outline-border-opacity:        .35; // only around
+$btn-translucent-bg-opacity:        .08; // only around
+
+$btn-icon-size:                     $font-size-base; // only around
+
+$btn-transition:                    color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out;
+
+$btn-focus-box-shadow:              none;
+$btn-active-box-shadow:             none;
