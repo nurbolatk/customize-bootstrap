@@ -215,9 +215,9 @@ $input-btn-padding-y:               .5625rem; // 9px // this is from around
 $input-btn-padding-x:               1.125rem; // 18px // this is from around
 
 $input-btn-focus-width:         .2rem;
-$input-btn-focus-color-opacity: .25;
+$input-btn-focus-color-opacity: .35;
 $input-btn-focus-color:         rgba($primary, $input-btn-focus-color-opacity);
-$input-btn-focus-box-shadow:    0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-btn-focus-box-shadow:    0 0 0 2px $input-btn-focus-color;
 
 // $input-btn-padding-y-sm:      .25rem;
 // $input-btn-padding-x-sm:      .6rem;
@@ -270,3 +270,111 @@ $btn-transition:                    color .25s ease-in-out, background-color .25
 
 $btn-focus-box-shadow:              none;
 $btn-active-box-shadow:             none;
+
+
+// Forms
+
+$form-text-margin-top:              0.25rem; // 4px // feedback text,.form-text mt
+$form-text-color:                   $text-muted; // .form-text color
+
+$form-label-margin-bottom:          0.5rem; // we can also customize form labels
+
+$input-bg:                              $white;
+$input-disabled-bg:                     $gray-200;
+$input-disabled-border-color:           null;
+
+$input-color:                           $body-color;
+$input-border-color:                    $gray-400;
+$input-font-weight:                     $font-weight-medium;
+$input-box-shadow:                      none;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              rgba($primary, .35);
+// $input-focus-border-color:              $primary;
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow:                0 .375rem .625rem -.3125rem rgba($primary, .15);
+
+$input-placeholder-color:               $gray-500;
+$input-plaintext-color:                 $body-color;
+
+$form-check-label-cursor:               pointer;
+
+$input-group-addon-color:               $input-color;
+$input-group-addon-bg:                  $input-bg;
+$input-group-addon-border-color:        $info;
+
+$form-select-box-shadow:                none;
+
+$form-select-focus-border-color:  $primary;
+$form-select-focus-width:         $input-focus-width;
+$form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $primary !default;
+
+
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
+
+// Navs
+
+$nav-link-padding-y:                      .5625rem !default;
+$nav-link-padding-x:                      1.25rem !default;
+$nav-link-font-weight:                    $font-weight-medium !default;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-500 !default;
+
+$nav-tabs-border-color:             $gray-900 !default;
+$nav-tabs-border-width:             $border-width !default;
+$nav-tabs-border-radius:            $border-radius !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $danger !default;
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-border-color: $gray-900 $gray-900 $success !default;
+
+$nav-pills-border-radius:           $border-radius !default;
+$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-bg:          $component-active-bg !default;
+
+// Cards
+
+$card-spacer-y:                     1.5rem !default;
+$card-spacer-x:                     1.5rem !default;
+$card-title-spacer-y:               $spacer !default;
+$card-border-width:                 $border-width !default;
+$card-border-radius:                $border-radius-lg !default;
+$card-border-color:                 $gray-300 !default;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:                $card-spacer-y / 2 !default;
+$card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-color:                    null !default;
+$card-height:                       null !default;
+$card-color:                        null !default;
+$card-bg:                           $white !default;
+
+
+// List group
+
+$list-group-color:                  null !default;
+$list-group-bg:                     $white !default;
+$list-group-border-color:           $gray-300 !default;
+$list-group-border-width:           $border-width !default;
+$list-group-border-radius:          $border-radius-lg !default;
+
+$list-group-item-padding-y:         $spacer * .75 !default;
+$list-group-item-padding-x:         $spacer !default;
+$list-group-item-bg-level:          -9 !default;
+$list-group-item-color-level:       6 !default;
+
+$list-group-hover-bg:               $gray-100 !default;
+$list-group-active-color:           $component-active-color !default;
+$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-border-color:    $list-group-active-bg !default;
+
+$list-group-disabled-color:         $gray-600 !default;
+$list-group-disabled-bg:            $list-group-bg !default;
+
+$list-group-action-color:           $gray-700 !default;
+$list-group-action-hover-color:     $list-group-action-color !default;
+
+$list-group-action-active-color:    $body-color !default;
+$list-group-action-active-bg:       $gray-200 !default;

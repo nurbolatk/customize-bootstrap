@@ -1,3 +1,7 @@
+import bootstrap from "./node_modules/bootstrap/dist/js/bootstrap.js";
+// import bootstrap from "bootstrap";
+import "./sass/main.scss"; // Import our scss file
+
 const colorList = document.querySelector(".color-list");
 const grays = [
   { name: "white", color: "#fff" },

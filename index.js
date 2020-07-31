@@ -2,7 +2,7 @@ import bootstrap from "./node_modules/bootstrap/dist/js/bootstrap.js";
 // import bootstrap from "bootstrap";
 import "./sass/main.scss"; // Import our scss file
 
-import "./kitchen";
+
 var nextPlaceOrderBtn = document.getElementById("next-place-order-btn");
 const promocodeForm = document.getElementById("promocode-form");
 
@@ -69,7 +69,7 @@ promocodeForm.addEventListener("submit", (e) => {
       // else append
       promocodeForm
         .querySelector(".input-group")
-        .insertAdjacentHTML("beforeend", createPromocodeFeedback(true));
+        .insertAdjacentHTML("afterend", createPromocodeFeedback(true));
       // add styles to input
       promocodeForm[0].classList.remove("is-invalid");
       promocodeForm[0].classList.add("is-valid");
@@ -85,7 +85,7 @@ promocodeForm.addEventListener("submit", (e) => {
       // else append
       promocodeForm
         .querySelector(".input-group")
-        .insertAdjacentHTML("beforeend", createPromocodeFeedback(false));
+        .insertAdjacentHTML("afterend", createPromocodeFeedback(false));
       promocodeForm[0].classList.remove("is-valid");
       promocodeForm[0].classList.add("is-invalid");
     }
